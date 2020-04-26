@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CANBuddy</string>
+    <string name="title_activity_hud">HUD</string>
+</resources>

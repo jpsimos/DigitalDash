@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_radio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="psimos.jacob.dashboard.RadioActivity"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Radio Controller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:layout_span="2"
+                    android:textSize="64dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_blue_light" />
+            </TableRow>
+
+        </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="64dp">
+
+        <Button
+            android:layout_width="137dp"
+            android:layout_height="74dp"
+            android:text="Volume UP"
+            android:id="@+id/btnVolUp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_width="137dp"
+            android:layout_height="74dp"
+            android:text="Volume Down"
+            android:id="@+id/btnVolDown"
+            android:textSize="16dp"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+        <Button
+            android:layout_width="137dp"
+            android:layout_height="74dp"
+            android:text="Mute"
+            android:textSize="16dp"
+            android:id="@+id/btnMute"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+        <Button
+            android:layout_width="137dp"
+            android:layout_height="74dp"
+            android:text="Source"
+            android:textSize="16dp"
+            android:id="@+id/btnSource"
+            style="@style/Widget.AppCompat.Button.Colored" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="33dp">
+
+        <Button
+            android:layout_width="137dp"
+            android:layout_height="74dp"
+            android:text="Up"
+            android:textSize="16dp"
+            android:id="@+id/btnUp"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+        <Button
+            android:layout_width="137dp"
+            android:layout_height="74dp"
+            android:text="Down"
+            android:textSize="16dp"
+            android:id="@+id/btnDown"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+        <Button
+            android:layout_width="137dp"
+            android:layout_height="74dp"
+            android:text="Left"
+            android:textSize="16dp"
+            android:id="@+id/btnLeft"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+        <Button
+            android:layout_width="137dp"
+            android:layout_height="74dp"
+            android:text="Right"
+            android:textSize="16dp"
+            android:id="@+id/btnRight"
+            style="@style/Widget.AppCompat.Button.Colored" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="33dp">
+
+        <Button
+            android:layout_width="137dp"
+            android:layout_height="74dp"
+            android:text="Information"
+            android:textSize="16dp"
+            android:id="@+id/btnInfo"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

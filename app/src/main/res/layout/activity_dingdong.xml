@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="psimos.jacob.dashboard.DingDong"
+    android:background="#000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24pt"
+                android:textColor="#ffe100"
+                android:text="Ding Dong"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="75dp"
+                    android:layout_weight="0.25">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chime"
+                        android:id="@+id/btnChimeLF"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Beep"
+                        android:id="@+id/btnBeepLF"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fade Out Beep"
+                        android:id="@+id/btnFadeLF"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tick-Tock"
+                        android:id="@+id/btnBlinkLF"/>
+
+                </LinearLayout>
+
+                <!--Padding-->
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+                <!--End Padding-->
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="right"
+                    android:paddingTop="75dp"
+                    android:layout_weight="0.25">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chime"
+                        android:id="@+id/btnChimeRF"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Beep"
+                        android:id="@+id/btnBeepRF"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fade Out Beep"
+                        android:id="@+id/btnFadeRF"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tick-Tock"
+                        android:id="@+id/btnBlinkRF"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--Begin Bottom -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="110dp"
+                    android:layout_weight="0.25">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chime"
+                        android:id="@+id/btnChimeLR"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Beep"
+                        android:id="@+id/btnBeepLR"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fade Out Beep"
+                        android:id="@+id/btnFadeLR"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tick-Tock"
+                        android:id="@+id/btnBlinkLR"/>
+
+                </LinearLayout>
+
+                <!--Padding-->
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+                <!--End Padding-->
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="bottom|right"
+                    android:paddingBottom="110dp"
+                    android:layout_weight="0.25">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chime"
+                        android:id="@+id/btnChimeRR"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Beep"
+                        android:id="@+id/btnBeepRR"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fade Out Beep"
+                        android:id="@+id/btnFadeRR"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tick-Tock"
+                        android:id="@+id/btnBlinkRR"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

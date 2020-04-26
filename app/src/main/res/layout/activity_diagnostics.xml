@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+    android:background="#000"
+    tools:context="psimos.jacob.dashboard.DiagnosticsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/toggleDiagnostics"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:switchMinWidth="128dp"
+            android:switchPadding="20dp"
+            android:text="Enable Diagnostics"
+            android:textColor="#FFF"
+            android:textSize="16pt"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/toggleLowBeams"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:switchMinWidth="128dp"
+            android:switchPadding="20dp"
+            android:text="Headlights Low Beams"
+            android:textColor="#FFF"
+            android:textSize="16pt"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/toggleHighBeams"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:switchMinWidth="128dp"
+            android:switchPadding="20dp"
+            android:text="Headlights High Beams"
+            android:textColor="#FFF"
+            android:textSize="16pt"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/toggleWipers"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:switchMinWidth="128dp"
+            android:switchPadding="20dp"
+            android:text="Windshield Wipers"
+            android:textColor="#FFF"
+            android:textSize="16pt"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/toggleWasher"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:switchMinWidth="128dp"
+            android:text="Windshield Washer"
+            android:textColor="#FFF"
+            android:textSize="16pt"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/toggleHorn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="128dp"
+            android:switchPadding="20dp"
+            android:text="Horn"
+            android:textColor="#FFF"
+            android:textSize="16pt"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1.0"
+        android:paddingTop="80dp"
+        android:paddingBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/toggleLF"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_gravity="top" />
+
+            <ToggleButton
+                android:id="@+id/toggleLR"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/toggleRF"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_gravity="right"/>
+
+            <ToggleButton
+                android:id="@+id/toggleRR"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

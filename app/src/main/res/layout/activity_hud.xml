@@ -1,0 +1,176 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="psimos.jacob.dashboard.HUD">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+
+    <LinearLayout
+        android:id="@+id/fullscreen_content"
+        android:keepScreenOn="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <psimos.jacob.animations.BlinkerArrow
+                    android:layout_width="125dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/hud_leftBlinker"/>
+
+                <psimos.jacob.animations.CircularGauge
+                    android:id="@+id/hud_mphGauge"
+                    android:layout_width="350dp"
+                    android:layout_height="350dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="50dp"
+                tools:ignore="UselessParent">
+
+                <psimos.jacob.animations.CircularGauge
+                    android:id="@+id/hud_rpmGauge"
+                    android:layout_width="350dp"
+                    android:layout_height="350dp" />
+
+                <psimos.jacob.animations.BlinkerArrow
+                    android:layout_width="125dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/hud_rightBlinker"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <psimos.jacob.animations.Compass
+                android:id="@+id/hud_Compass"
+                android:layout_width="250dp"
+                android:layout_height="250dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="10dp"
+                            android:text="Fuel: 00.0 gal"
+                            android:textColor="#37b7fc"
+                            android:textSize="32dp"
+                            android:id="@+id/hud_lblFuelGallons"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:text="Range: 000.0 miles"
+                            android:textColor="#37b7fc"
+                            android:textSize="32dp"
+                            android:id="@+id/hud_lblRange"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MPG: 00.0   "
+                            android:textColor="#37b7fc"
+                            android:textSize="32dp"
+                            android:paddingRight="10dp"
+                            android:id="@+id/hud_lblMPG"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AVG: 00.0   "
+                            android:paddingLeft="20dp"
+                            android:textColor="#37b7fc"
+                            android:textSize="32dp"
+                            android:id="@+id/hud_lblAvgMPG"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="P R N D 1 2 3 4"
+                            android:textColor="#FFFFFF"
+                            android:textSize="52dp"
+                            android:id="@+id/hud_lblGear"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <psimos.jacob.animations.RA2Gauge
+                            android:id="@+id/hud_throttleGauge"
+                            android:layout_width="500dp"
+                            android:layout_height="36dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <psimos.jacob.animations.RA2Gauge
+                            android:id="@+id/hud_manifoldGauge"
+                            android:layout_width="500dp"
+                            android:layout_height="16dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
